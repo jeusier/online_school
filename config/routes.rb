@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #   end
 
   get '/about', to: 'home#about', as: 'about'
+  get '/promotions', to: 'promotions#index', as: 'promotions'
 end

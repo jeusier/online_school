@@ -1,6 +1,13 @@
 - @promotions.each do |promotion|
-    =promotion["title"]
-    =promotion["description"]
-    =promotion["price"]
-    =promotion["original_price"]
     =image_tag promotion["photo_url"]
+    h2
+        =promotion["title"]
+    p 
+        =promotion["description"]
+    p 
+        | Promotional Price: 
+        =promotion["price"]
+    p 
+        | Original Price: 
+        =promotion["original_price"]
+    
